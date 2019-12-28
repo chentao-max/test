@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
+
+    <bean id="student" class="com.spring.bean.Student">
+        <property name="stuName" value="张明明"/>
+        <property name="stuNo" value="S0001"/>
+        <property name="cat" ref="cat"/>
+    </bean>
+    <bean id="cat" class="com.spring.bean.Cat">
+        <property name="catNo" value="C0001"/>
+        <property name="catName" value="仔仔"/>
+        <property name="wo" ref="wo"/>
+    </bean>
+    <bean id="wo" class="com.spring.bean.Wo">
+        <property name="woNo" value="W0001"/>
+        <property name="woName" value="美人窝"/>
+    </bean>
+</beans>
+
+
+
